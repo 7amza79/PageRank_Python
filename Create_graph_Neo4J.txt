@@ -1,0 +1,8 @@
+Create (NodeA:node{name:'NodeA'})-[:Linked_To]->(NodeB:node{name:'NodeB'})-[:Linked_To]->(NodeC:node{name:'NodeC'})
+Create (NodeA)-[:Linked_To] ->(NodeA)
+Create (NodeA)-[:Linked_To] ->(NodeC)
+Create (NodeB)-[:Linked_To] ->(NodeA)
+Create (NodeC)-[:Linked_To] ->(NodeC)
+Create (NodeC)-[:Linked_To] ->(NodeB)
+
+
